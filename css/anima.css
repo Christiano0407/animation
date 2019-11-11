@@ -60,6 +60,7 @@ justify-content: center;
 color: white;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 height: 100vh;
+/* perspective: 200px; */
 }
 
 .container {
@@ -73,6 +74,9 @@ transform: rotate(45deg);
 /* transform: rotateY(45deg); */
 /* transform: rotateZ(45deg); */
 /* transform: rotate3d(1, 1, 1, 45deg); */
+/* transform: translate(100px); */
+/* perspective: 200px; */
+/* perspective: 0vmax; */
 }
 
 .cuadrado {
