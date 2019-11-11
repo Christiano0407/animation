@@ -3,6 +3,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    /* perspective: 200px; */
 }
 
 /* .pelota {
@@ -69,7 +70,7 @@ height: 100vh;
 
 .container:hover .cuadrado {
 /* transform: rotate( 45deg); */
-transform: rotate(45deg);
+/* transform: rotate(45deg); */
 /* transform: rotateX(45deg); */
 /* transform: rotateY(45deg); */
 /* transform: rotateZ(45deg); */
@@ -77,6 +78,11 @@ transform: rotate(45deg);
 /* transform: translate(100px); */
 /* perspective: 200px; */
 /* perspective: 0vmax; */
+/* transform: translate(100px); */
+/* transform: translate3d(100px, 100px, 100px); */
+/* transform: scale(3); */
+transform: scale(2);
+transform-origin: left;
 }
 
 .cuadrado {
