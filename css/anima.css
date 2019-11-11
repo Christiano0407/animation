@@ -81,8 +81,26 @@ height: 100vh;
 /* transform: translate(100px); */
 /* transform: translate3d(100px, 100px, 100px); */
 /* transform: scale(3); */
-transform: scale(2);
-transform-origin: left;
+/* transform: scale(2); */
+/* transform-origin: left; */
+/* animation-direction: alternate; */
+/* animation-play-state: paused; */
+/* animation-timing-function: cubic-bezier(1, 1, 1, 1); */
+
+}
+
+@keyframes cuadrado {
+    0% {
+    left: 0;
+    }
+
+    /* 50% {
+    opacity: 0;
+    } */
+
+    100%{
+        left: calc(100% - 240px);
+    }
 }
 
 .cuadrado {
@@ -90,6 +108,18 @@ width: 200px;
 height: 200px;
 background: yellow;
 margin: 10px;
-transition: 1s;
+transition: 2s;
 text-align: center;
+animation-name: cuadrado;
+animation-duration: 1s;
+/* animation-delay: 1s; */
+/* animation-timing-function:  */
+/* animation-iteration-count: infinite; */
+/* animation-timing-function: ease-in; */
+animation-direction: alternate;
+/* animation-fill-mode: forwards; */
+position: relative;
+/* animation-timing-function: steps(60); */
+/* animation-timing-function: ease-in; */
+animation-timing-function: cubic-bezier(1, 1, 1, 1);
 }
