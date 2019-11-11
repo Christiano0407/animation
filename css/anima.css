@@ -40,6 +40,8 @@ body {
     position: relative;
     height: 100px;
     width: 100%;
+    transform: rotate(45deg);
+    /* transform: skew(10deg) translate(100px) scale(1); */
 }
 .canasta:hover .pelota.a {
     /* width: 200px;
