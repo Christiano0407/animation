@@ -1,8 +1,10 @@
 body {
     display: flex;
-    height: 100vh;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100vh;
     /* perspective: 200px; */
 }
 
@@ -56,7 +58,7 @@ body {
 
 .container {
 display: flex;
-align-items: center;
+align-items: flex-start;
 justify-content: center;
 color: white;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -66,6 +68,7 @@ height: 100vh;
 
 .container {
     border: 1px solid royalblue;
+    width: 100%;
 }
 
 .container:hover .cuadrado {
@@ -84,7 +87,7 @@ height: 100vh;
 /* transform: scale(2); */
 /* transform-origin: left; */
 /* animation-direction: alternate; */
-/* animation-play-state: paused; */
+animation-play-state: paused;
 /* animation-timing-function: cubic-bezier(1, 1, 1, 1); */
 
 }
@@ -103,23 +106,49 @@ height: 100vh;
     }
 }
 
+@keyframes rebote {
+    from {
+        /* 0% */
+        transform: translateY(0);
+    }
+    to {
+        /* 100% */
+        transform: translateY(100px) scale(1, .8);
+    }
+}
+
+@keyframes escalera {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(500px);
+    }
+}
+
 .cuadrado {
 width: 200px;
 height: 200px;
 background: yellow;
-margin: 10px;
+margin: 20px;
+border-radius: 50%;
 transition: 2s;
 text-align: center;
-animation-name: cuadrado;
-animation-duration: 1s;
+display: flex;
+justify-content: center;
+align-items: center;
+animation-name: cuadrado, rebote;
+animation-duration: 3s, .3s;
 /* animation-delay: 1s; */
 /* animation-timing-function:  */
-/* animation-iteration-count: infinite; */
+animation-iteration-count: infinite, 10;
 /* animation-timing-function: ease-in; */
 animation-direction: alternate;
 /* animation-fill-mode: forwards; */
 position: relative;
+animation-timing-function: linear, ease-in-out;
 /* animation-timing-function: steps(60); */
 /* animation-timing-function: ease-in; */
-animation-timing-function: cubic-bezier(1, 1, 1, 1);
+/* animation-timing-function: cubic-bezier(1, 1, 1, 1); */
 }
