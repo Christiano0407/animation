@@ -95,6 +95,7 @@ animation-play-state: paused;
 @keyframes cuadrado {
     0% {
     left: 0;
+    /* visibility: visible; */
     }
 
     /* 50% {
@@ -103,17 +104,25 @@ animation-play-state: paused;
 
     100%{
         left: calc(100% - 240px);
+        /* visibility: hidden; */
+        filter: drop-shadow(16px 16px 20px red) invert(75%)
     }
+
 }
 
 @keyframes rebote {
     from {
         /* 0% */
         transform: translateY(0);
+        offset-distance: 0%;
+        /* visibility: visible; */
     }
     to {
         /* 100% */
         transform: translateY(100px) scale(1, .8);
+        /* visibility: hidden; */
+        offset-distance: 100%;
+        filter: drop-shadow(16px 16px 20px red) invert(75%)
     }
 }
 
@@ -139,16 +148,17 @@ display: flex;
 justify-content: center;
 align-items: center;
 animation-name: cuadrado, rebote;
-animation-duration: 3s, .3s;
+/* animation-duration: 3s, .3s; */
 /* animation-delay: 1s; */
 /* animation-timing-function:  */
-animation-iteration-count: infinite, 10;
+/* animation-iteration-count: infinite, 10; */
 /* animation-timing-function: ease-in; */
-animation-direction: alternate;
+/* animation-direction: alternate; */
 /* animation-fill-mode: forwards; */
-position: relative;
-animation-timing-function: linear, ease-in-out;
+/* position: relative; */
+/* animation-timing-function: linear, ease-in-out; */
 /* animation-timing-function: steps(60); */
 /* animation-timing-function: ease-in; */
 /* animation-timing-function: cubic-bezier(1, 1, 1, 1); */
+/* visibility: visible; */
 }
