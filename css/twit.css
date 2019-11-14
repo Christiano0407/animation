@@ -10,5 +10,29 @@ body{
     cursor: pointer;
     width: 100px;
     height: 100px;
-    background: red;
+    background-image: url("../img/corazon.png");
+    /* background: red; */
+}
+
+.like.is-liked {
+    animation-name: like;
+    animation-duration: 1s;
+    animation-timing-function: steps(28);
+    /* background-position: -2800px 0; */
+    /* background-position: right; */
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes like {
+    0% {
+     /* transform: translate(0); */
+     background-position: 0 0;
+    }
+
+    100% {
+     /* transform: translate(200px); */
+     background-position: right;
+     /* background-position: -2800px 0; */
+    }
 }
