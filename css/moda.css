@@ -19,8 +19,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
 }
-
+.overlay.active {
+opacity: 1;
+visibility: visible;
+}
 .modal {
     /* width: 200px;
     height: 200px; */
@@ -61,55 +67,6 @@ body {
     transform: scale(.9);
 }
 
-/* @keyframes animationIn {
-    /* from */
- 0% {
-   opacity: 0;
-   transform: scale(.3) rotate(0deg);
- }
-
- 50% {
-     opacity:1;
-     transform: scale(.8) rotate(405deg);
-
- }
-
- 80% {
-  opacity: 1;
-  transform: scale(.8) rotate(405deg);
-
- }
-    /* to */
- 100%{
-  opacity: 0;
-  transform: scale(.3) rotate(0deg);
- }
-} */
-
-/* @keyframes platzi-left  {
-    0% { 
-        width: 100%;
-        
-    }
-
-    25% {
-    width: 80%;
-    }
-
-    50% {
-     width: 80%;
-    }
-
-    /* 75% {
-       width: 80%;
-    } */
-
-    100% {
-       width: 100%;
-    }
-
-} */
-
 @keyframes modalIn {
     0% {
       transform: translateY(-3000px);
@@ -123,7 +80,7 @@ body {
     90% {
       transform: translateY(5px);
     }
-  }
+  };
 
   /*@keyframes animationOut {*/
   @keyframes modalOut {
@@ -139,4 +96,4 @@ body {
     100% {
       transform: translateY(-3000px);
     }
-  }
+  };
