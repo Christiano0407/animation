@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuadrado</title>
+</head>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #234050;
+    }
+
+    .cuadrado {
+        width: 200px;
+        height: 200px;
+        background: red;
+        animation: animationOut .8s forwards;
+    }
+
+    @keyframes animationIn {
+        0% {
+        transform: translateY(-3000px);
+        }
+
+        50% {
+            transform: translateY(25px);
+        }
+
+        75% {
+            transform: translateY(-10px)
+        }
+
+        90% {
+         transform: translateY(5px);
+        }
+        
+    }
+
+    @keyframes animationOut {
+        0% {
+        transform: translateY(5px);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        75% {
+            transform: translateY(25px)
+        }
+
+        100% {
+         transform: translateY(-3000px);
+        }
+    }
+
+</style>
+<body>
+    <div class="cuadrado"></div>
+</body>
+</html>
